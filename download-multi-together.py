@@ -104,9 +104,6 @@ for ind in range(0, len(classes)):
         command = 'aws s3 --no-sign-request --only-show-errors cp s3://open-images-dataset/' + run_mode + '/' + annotation[0] + '.jpg ' + run_mode + '/' + annotation[0] + '.jpg'
         if command not in commands:
             commands.append(command)
-
-        if len(commands) > 10:
-            break
         
         # Append the annotation to the corresponding image label
         with open('%s/%s.txt'%(run_mode,annotation[0]),'a') as f:

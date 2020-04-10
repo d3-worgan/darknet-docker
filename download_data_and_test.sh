@@ -14,4 +14,5 @@ cd /home/darknet/cfg/
 sed -i 's#valid = data/coco_val_5k.list#valid = /home/darknet/data/oi_map_test/test_set.txt#g' openimages.data
 
 cd /home/darknet/
-./darknet detector map '/cfg/openimages.data' 'cfg/yolov3-openimages.cfg' '/home/darknet/data/oi_map_test/yolov3-openimages.weights'
+./darknet detector map '/cfg/openimages.data' 'cfg/yolov3-openimages.cfg' '/home/darknet/data/oi_map_test/yolov3-openimages.weights' > /home/darknet/data/oi_map_test/test_results.txt
+

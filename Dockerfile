@@ -20,4 +20,6 @@ RUN git clone https://github.com/AlexeyAB/darknet.git && \
 
 WORKDIR /home/darknet/data/oi_map_test/
 
-COPY download-multi-together.py fix_oi_labels.py make-darknet-jpg-paths.py classes.txt ./
+COPY download-multi-together.py fix_oi_labels.py make-darknet-jpg-paths.py classes.txt download_data_and_test.sh ./
+
+RUN chmod +x download_data_and_test.sh
