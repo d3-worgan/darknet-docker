@@ -10,3 +10,7 @@ darknet in docker for easy online training and testing
 - Written in python and used for downloading datasets from Open Images dataset. 
 - Fix the labels for YOLO format from open images.
 - Run a MAP test on an detection model.
+
+https://github.com/NVIDIA/nvidia-container-runtime
+https://github.com/NVIDIA/nvidia-docker
+https://github.com/openimages/dataset
