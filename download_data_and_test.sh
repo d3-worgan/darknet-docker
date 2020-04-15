@@ -19,9 +19,4 @@ cd /home/darknet/
 wget https://pjreddie.com/media/files/yolov3-openimages.weights
 
 # Calculate the MAP of the detector and save the results to a text file
-./darknet detector map '/cfg/openimages.data' 'cfg/yolov3-openimages.cfg' 'yolov3-openimages.weights' > /home/darknet/data/oi_map_test/test_results.txt
-
-# Save the results to the github repo
-git add .
-git commit -m "completed map job"
-git push origin master
+./darknet detector map '/cfg/openimages.data' '/cfg/yolov3-openimages.cfg' 'yolov3-openimages.weights' > /home/darknet/data/oi_map_test/test_results.txt
