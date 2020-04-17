@@ -10,3 +10,4 @@ Countertop
 Table
 Coffee table
 Sofa bed
+Chair
